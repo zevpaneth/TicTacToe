@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import userRoutes from './routes/userRoutes.js';
-import gameRoutes from './routes/gameRoures.js';
+import gameRoutes from './routes/gameRoutes';
 import errorHandler from './middleware/errorHandler.js';
 import dotenv from 'dotenv';
 dotenv.config();
