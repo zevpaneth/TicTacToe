@@ -1,6 +1,5 @@
 import { User } from '../models/User';
 import { getUsers, } from '../dal/userDAL.js';
-import bcrypt from 'bcrypt';
 
 
 export const authenticateUser = async (username: string, password: string): Promise<User | null> => {
