@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my app</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>כניסת משתמש</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="שם משתמש" required>
+            <input type="password" id="password" placeholder="סיסמה" required>
+            <button type="submit">כניסה</button>
+        </form>
+    </div>
+
+    <div class="profile-container" id="profile" style="display: none;">
+        <h2>פרטים אישיים</h2>
+        <img src="profile.jpg" alt="תמונת פרופיל" id="profileImage">
+        <p id="profileName"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
