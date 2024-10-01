@@ -3,6 +3,7 @@ import * as userService from '../services/userService.js';
 import jwt from 'jsonwebtoken';
 import { User } from '../models/User.js';
 import dotenv from "dotenv"
+import { getUser } from '../services/gameService.js';
 
 dotenv.config();
 
@@ -24,3 +25,4 @@ export const login = async (req: Request, res: Response, next: NextFunction): Pr
     next(error);
   }
 };
+
