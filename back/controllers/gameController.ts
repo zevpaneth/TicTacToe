@@ -13,26 +13,6 @@ const JWT_SECRET:string = process.env.JWT_SECRET || "default_secret";
 
 
 
-
-
-// export const profile = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-//     try {
-//       const { username } = req.body;
-//       const user = await getUser(username);
-//       if (user) {
-//         res.json({ user });
-//       } else {
-//         res.status(404).json({ message: 'User not found' });
-//       }
-//     } catch (error) {
-//       next(error);
-//     }
-//   }
-
-
-
-
-
 export const profile = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
         // קבלת הטוקן מה-header

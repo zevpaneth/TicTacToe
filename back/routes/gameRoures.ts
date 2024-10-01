@@ -5,6 +5,6 @@ const router = express.Router();
 
 
 
-router.get('/profile', gameController.profile);
+router.get('/profile/', gameController.profile);
 
 export default router;
